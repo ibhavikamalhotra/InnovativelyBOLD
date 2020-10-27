@@ -31,7 +31,7 @@
                       </svg></a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link"href="#profile">PROFILE<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#profile">PROFILE<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                       </svg></a>
                 </li>
@@ -41,6 +41,40 @@
             </ul>
     </nav>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign in to your account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="recipient-name">
+              </div>
+              <h6 class="h1-responsive font-weight-200 text-right" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 3%;color: rgb(150, 141, 141);">Forgot Password?</h6>
+    
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-info" data-dismiss="modal">Sign In</button>
+             </div>
+        </div>
+      </div>
+    </div>
+    
 
     <section id="banner">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
